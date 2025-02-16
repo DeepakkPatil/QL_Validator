@@ -1,27 +1,15 @@
+import { Typography } from '@mui/material';
 import './App.css';
+import UploadTableForm from './uploadFile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="App" style={{ boder:"10px solid black"}}>
+      <div style={{ position:'absolute',backgroundColor: 'transparent', width:'100%',  display:'flex', alignItems:'center',justifyContent:'center'}}>
+      <span style={{ marginTop:10 , fontSize:'1.2rem', backgroundColor: 'white' , borderRadius:10 ,padding:"5px 15px 5px 15px" }}
+        > SQL Validation (Deepak Patil)</span>
+        </div>
+     <UploadTableForm/>
     </div>
   );
 }
